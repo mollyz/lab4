@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinner planner</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="stylecss.css">
+  
+
+</head>
+
+<body>
+    <div class="jumbotron" style="padding:0px;margin:0px;">
+
+        <!--fixed heading-->
+        <div class="row">
+          <div class="col-md-12" id="head-Background">
+            <h1 class="marginLeft">HOMELETTE <span id="subtitle"> From the best chefs in the world directly into your kitchen.</span></h1></div>
+        </div>
+    </div>
+
+<!--page 1 hovering square-->
+    <div class="container" id="hover-div">
+            <h4>A Home Dinner Service</h4>
+            <hr>
+            <p>jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. <br><br>start quickly:
+            </p>
+            <button id="firstbutton">Create new dinner</button>
+    </div>      
+
+
+<!--page 2-->
+
+    <div class="container-fluid" id="SecondPage" style="display:none;">
+        <div class="row">
+       <!--page 2.1 & 2.2 &2.3 sidebar-->
+            <div class="col-md-3 sidenav" id="sideNavView">
+	              <h2>My Dinner</h2>
+	              <div class="row">
+	                <div class="col-md-3">People Number:</div>
+	                <div class="col-md-9">
+	                    <button id="minusGuest" class="btn">-</button>
+
+	                    <span id="numberOfGuests">0</span>
+
+	                    <button id="plusGuest" class="btn">+</button>
+	                </div>
+	              </div>
+
+		          <br>
+<<<<<<< HEAD
+                  <div class="row-fluid" id="PriceTable">
+                    
+                        <div class="col-sm-3">ddddd</div>
+
+                        <div class="col-sm-7">wwwwww</div>
+                        
+                        <div class="col-sm-1">fffff</div>
+                   
+
+	                   
+                  </div>
+	              <div class="row-fluid">
+	                    <div class="col-sm-2"></div>
+=======
+	              <div class="row" id="PriceTable">
+		                <div class="col-md-8">Dish Name</div>
+		                <div class="col-md-4">Cost</div>
+		                <div class="row" id="PriceTable">
+		                  	<div class="col-md-8" id="starterMenu"></div>
+		                  	<div class="col-md-4" id="starterCost">remove function</div>
+		                  	<div class="col-md-8" id="mainMenu"></div>
+		                  	<div class="col-md-4" id="mainCost">remove function</div>
+		                 	<div class="col-md-8" id="dessertMenu"></div>
+		                 	<div class="col-md-4" id="dessertCost">remove function</div>
+		                    <div class="col-md-8">Total:</div>
+		                    <div class="col-md-4" id="totalCost"></div>
+	                    </div>
+	              </div>
+	              <div class="row">
+	                    <div class="col-md-3"></div>
+>>>>>>> origin/master
+
+	                    <div class="col-md-8"><button id="confirmDinner">Confirm Dinner</button></div>
+	                    
+<<<<<<< HEAD
+	                    <div class="col-sm-2"></div>
+=======
+	                    <div class="col-md-1"></div>
+>>>>>>> origin/master
+	              </div>
+            </div>
+                
+        
+
+  <!--page 2.1 & 2.3  list view-->
+            <div class="col-md-9"id="searchArea" style="display:none;">
+                <div id="selectDish">
+                    <h2>Select Dish</h2>
+                    <hr>
+                    <div class="row">
+<<<<<<< HEAD
+                        <div class="col-sm-2 paddingRightNone">
+=======
+                        <div class="col-md-2">
+>>>>>>> origin/master
+                            <form name="what">
+                            <input type="text" id="inputKeyword">
+                            </form>
+                        </div>
+<<<<<<< HEAD
+                        <div class="col-sm-2">
+                            <div class="toolButton paddingLeftNone" id="searchButton">search
+=======
+                        <div class="col-md-2">
+                            <div class="toolButton" id="searchButton">search
+>>>>>>> origin/master
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            
+                                <select id="courseType">
+                                    <option value="0" selected>no filter</option>
+                                    <option value="starter">Starter</option>
+                                    <option value="main dish">Main dish</option>
+                                    <option value="dessert">Dessert</option>
+                                    </select>
+                              
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+
+                <div id="showList">
+                  
+                </div>
+            </div>
+         
+
+
+<!--page 2.2 detial view-->
+            <div class="col-md-9" id="detailView" style="display:none;">
+                <div class="row">
+                    <div class="col-md-6" >
+                        <div id="detailDish">
+                            <h2>LASAGNE</h2>
+                            <img src="./images/pasta.jpeg" alt="pasta">
+                            <p>djldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks</p>
+                            <br>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 toolButton" id="backToSelect">Back to Select Dish</div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="col-md-6" id="Ingredient">
+                        <h3 id="dishPortion">INGREDIENTS FOR One  Dish</h3>
+                        <hr>
+                        <div style="overflow: auto">
+                          <div class="row" id="ingredientTable">
+                                <div class="col-md-2">2 tbsp</div>
+                                <div class="col-md-6">olive oil</div>
+                                <div class="col-md-2">SEK</div>
+                                <div class="col-md-2">0.2</div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="toolButton " id="confirmDish">Confirm Dish</div>
+                            </div>
+                            <div style="text-align: right;"class="col-md-3">SEK
+                            </div>
+                            <div style="text-align: right;border:1px solid black;" class="col-md-2 totalPrice" id="ingredientTotal">77.20
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="preparation" >
+                    <h1>PREPARATION</h1>
+                    <p>djsllanl  jlajd jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--page 3 top bar-->
+<div class="jumbotron" id="topBar" style="padding:0px;margin:0px;display: none;">
+    <div id="summaryHeading">
+        <div class="table1">
+            <div class="tableCell">
+                <div class="content" id="totalNum">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="table2" id="table2">
+            <div class="tableCell">
+                <div class="content">
+                    <div class="bigButton" id="editMenu">Go back and edit menu</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--page 3.1 DinnerOverview-->
+    <div class="content" id="dinnerOverview" style="display:none;">
+      <div class="row" >
+          <div class="col-md-8 borderRight" id="dinnerAll"style="padding:10px; overflow:auto;height:300px" >
+
+
+              <div class="floating-box2 RightAlign">
+                      <div> 
+                          <img class="borderAll" src="./images/icecream.jpg" alt="icecream">
+                      </div>
+                      <div class="textMiddle">icecream
+                      </div>
+                      <div class="RightAlign" style="padding: 5px;">77.23 SEK
+                      </div>
+              </div>
+              
+
+              
+              
+          </div>
+          <div class="col-md-4 bottomAlign1"style="padding-top:165px" >
+              <div class="bottomAlign2" id="printPrice">
+                  <h3>Totle:</p>
+                  <h3>345.10 SEK</p>
+              </div>
+          </div>
+      </div>
+      <hr>
+        <div class="row" >
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><div id="printButton">Print Full Recipe
+                </div></div>
+            <div class="col-md-4"></div>
+          
+        </div>
+    </div>
+
+    
+<!--   page 3.2 DinnerPreparation-->
+    <div class="container" id="dinnerPreparation" style="display:none;">
+        <div id="dinnerPre">
+            <div class="row padding" >
+                <div class="col-md-2 ">
+                    <img class="borderAll " src="./images/icecream.jpg" alt="icecream">
+                </div>
+                <div class="col-md-4">
+                    <h2>LASAGNE</h2>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Preparation</h4>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                </div>
+            </div>
+            <div class="row padding" >
+                <div class="col-md-2 ">
+                    <img class="borderAll " src="./images/icecream.jpg" alt="icecream">
+                </div>
+                <div class="col-md-4">
+                    <h2>LASAGNE</h2>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Preparation</h4>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                    <p>jldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjndbkie nks ksjh tmecje j sem j mslem ks. jdjldjlf jljelj ljbekl jla;lheoim n kaldn khsnekj bsikebjghabjg ,hgdn len lsneu nknalble kjn</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+ 
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <!-- The application JavaScript code -->
+     <script src="./js/app.js"></script>
+    <script src="./js/model/dinnerModel.js"></script>
+    
+<<<<<<< HEAD
+   
+=======
+>>>>>>> origin/master
+    
+    <script src="./js/view/firstView.js"></script>
+    <script src="./js/view/firstViewController.js"></script>
+
+    
+    <script src="./js/view/sideNavView.js"></script>
+    <script src="./js/view/sideNavViewController.js"></script>
+    <script src="./js/view/searchArea.js"></script>
+    <script src="./js/view/searchAreaController.js"></script>
+    <script src="./js/view/detailView.js"></script>
+    <script src="./js/view/detailViewController.js"></script>
+    <script src="./js/view/topBar.js"></script>
+    <script src="./js/view/topBarController.js"></script>
+    <script src="./js/view/dinnerOverview.js"></script>
+    <script src="./js/view/dinnerOverviewController.js"></script>
+    <script src="./js/view/dinnerPreparation.js"></script>
+    <script src="./js/view/dinnerPreparationController.js"></script>
+
+
+    
+    
+</body>
+
+</html>
